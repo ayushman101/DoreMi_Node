@@ -30,10 +30,11 @@ const switchCommand = (line)=>{
     // console.log(line[0])
     switch (line[0]) {
         case 'START_SUBSCRIPTION':
-            StartSubscriptionHandler(line)
+            user=StartSubscriptionHandler(line)
+            console.log(user)
             break;
         case 'ADD_SUBSCRIPTION':
-            AddSubscriptionHanlder(line)
+            user = AddSubscriptionHanlder(line)
             break;
         case 'ADD_TOPUP':
             AddTopUpHandler(line)
@@ -47,4 +48,5 @@ const switchCommand = (line)=>{
 
 }
 
-main()
+var user
+main(user)
