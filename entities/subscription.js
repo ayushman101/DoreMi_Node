@@ -1,5 +1,5 @@
 class Subscription{
-    constructor(months,amount,renewal_Date,category, plan){
+    constructor(category, plan , months,amount,renewal_Date){
         this.Months=months
         this.Amount=amount
         this.Renewal_Date= renewal_Date
