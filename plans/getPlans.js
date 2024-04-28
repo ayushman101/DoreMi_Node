@@ -9,10 +9,13 @@ const getAmount = (category,plan)=>{
 }
 
 const getRenewalDate= (startDate)=>{
-    startDate.setMonth(startDate.getMonth() + 1)
-    startDate.setDate(startDate.getDate() - 10)
+    
+    let newDate= new Date(startDate)
 
-    return startDate
+    newDate.setMonth(startDate.getMonth()+1)
+    newDate.setDate(startDate.getDate() - 10)
+    
+    return newDate
 }
 
 const getTopUp = (type,months) => {

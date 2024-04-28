@@ -5,6 +5,7 @@ class Subscription{
         this.Renewal_Date= renewal_Date
         this.Category=category
         this.Plan = plan    
+
     }
 }
 

@@ -31,20 +31,15 @@ const switchCommand = (line,user)=>{
     switch (line[0]) {
         case 'START_SUBSCRIPTION':
             user=StartSubscriptionHandler(line,user)
-            console.log(user)
             break;
         case 'ADD_SUBSCRIPTION':
             user = AddSubscriptionHanlder(line,user)
-    console.log(user)
-
             break;
         case 'ADD_TOPUP':
            user=AddTopUpHandler(line,user)
-           console.log(user)
-
            break;
         case 'PRINT_RENEWAL_DETAILS':
-            PrintDetailsHandler()
+            PrintDetailsHandler(user)
             break;
         default:
             console.log("Invalid Command")

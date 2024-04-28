@@ -7,7 +7,7 @@ const AddSubscriptionHanlder= (line,user)=>{
         return
     }
 
-    console.log(line)
+    // console.log(line)
     var sub = new Subscription(line[1],line[2],getMonths(line[1],line[2]),getAmount(line[1],line[2]),getRenewalDate(user.Start_Date))
 
     user.AddSubscription(sub)
