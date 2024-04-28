@@ -10,8 +10,8 @@ function main(){
     fs.readFile(filename, "utf8", (err, data) => {
     if (err) throw err
 
-    // var inputLines = data.toString().split("\n") 
-    var inputLines = data.toString().split("\r\n") 
+    var inputLines = data.toString().split("\n") 
+    // var inputLines = data.toString().split("\r\n") 
 
     inputLines.forEach(line => {
         switchCommand(line)
