@@ -1,4 +1,4 @@
-const { Plans } = require("./plans")
+const { Plans, topUp } = require("./plans")
 
 const getMonths = (category,plan)=>{
    return Plans[category][plan]["time"]
@@ -15,4 +15,10 @@ const getRenewalDate= (startDate)=>{
     return startDate
 }
 
-module.exports={getMonths,getAmount, getRenewalDate}
+const getTopUp = (type,months) => {
+    let topup= topUp[type]
+    topup.amount*=months
+    return topup
+}
+
+module.exports={getMonths,getAmount, getRenewalDate,getTopUp}

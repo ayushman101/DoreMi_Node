@@ -30,6 +30,10 @@ class User {
         }
     }
 
+    AddTopUp(topup){
+        this.Topup=topup
+    }
+
     
 }
 

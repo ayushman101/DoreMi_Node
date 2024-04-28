@@ -35,10 +35,14 @@ const switchCommand = (line,user)=>{
             break;
         case 'ADD_SUBSCRIPTION':
             user = AddSubscriptionHanlder(line,user)
+    console.log(user)
+
             break;
         case 'ADD_TOPUP':
-            AddTopUpHandler(line)
-            break;
+           user=AddTopUpHandler(line,user)
+           console.log(user)
+
+           break;
         case 'PRINT_RENEWAL_DETAILS':
             PrintDetailsHandler()
             break;
